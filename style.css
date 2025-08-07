@@ -97,7 +97,7 @@ body {
 /*---------- Ingredients Section style-------- */
 .ingredients {
     padding-bottom: 2rem;
-    border-bottom: 2px solid rgba(243, 230, 216, 1);
+    border-bottom: 2px solid rgba(228, 222, 216, 1);
 }
 .ingredients h3 {
     padding-bottom: 2rem;
@@ -121,7 +121,7 @@ body {
 /*--------- Instruction Section Style ----------*/
 .instruction {
     padding: 2rem 0;
-    border-bottom: 2px solid rgba(243, 230, 216, 1);
+    border-bottom: 2px solid rgba(228, 222, 216, 1);
 }
 .instruction h3 {
     padding-bottom: 2rem;
@@ -131,8 +131,8 @@ body {
 }
 .instruction ol li {
     padding-left: 1.5rem;
-    line-height: 1.5rem;
-    margin-bottom: 10px;
+    line-height: 1.8rem;
+    margin-bottom: 12px;
     color: rgba(95, 87, 78, 1);
 }
 .instruction ol li::marker {
@@ -154,7 +154,7 @@ table {
     border-collapse: collapse;
 }
 tr:not(:last-child) {
-    border-bottom: 2px solid rgba(243, 230, 216, 1);
+    border-bottom: 2px solid rgba(228, 222, 216, 1);
 }
 
 th {
@@ -172,16 +172,17 @@ td {
 @media only screen and (max-width: 375px) {
     /*------ common style -------*/
     .title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .sub-title {
         font-weight: 600;
     }
 
+    /*--------- Other Style -------*/
     body {
         background-color: #fff;
         padding: 0;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .image-container {
         max-width: 100vw;
@@ -204,6 +205,16 @@ td {
     .receipe-title {
         font-size: 2.3rem;
         padding: 1rem 0;
+    }
+    .preparation-title {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .instruction ol li {
+        padding-left: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 8px;
+        color: rgba(95, 87, 78, 1);
     }
     td {
         width: 60%;
