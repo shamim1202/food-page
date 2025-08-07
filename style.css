@@ -1,3 +1,4 @@
+/*-------------- Default Style -------------*/
 * {
     margin: 0;
     padding: 0;
@@ -17,24 +18,7 @@
     color: rgba(48, 45, 44, 1);
 }
 
-/* font-family: "Young Serif", serif, 
-font-family: "Outfit", sans-serif;
-
-## Colors
-
-- White: #ffffffff
-
-- Stone 100: rgba(243, 230, 216, 1)
-- Stone 150: rgba(228, 222, 216, 1)
-- Stone 600: rgba(95, 87, 78, 1)
-- Stone 900: rgba(48, 45, 44, 1)
-
-- Brown 800: rgba(133, 70, 50, 1)
-
-- Rose 800: rgba(123, 40, 79, 1)
-- Rose 50: rgba(255, 245, 250, 1)
-*/
-
+/*------------*** Style *** -------------*/
 body {
     background-color: rgba(243, 180, 255, 0.541);
     padding: 20rem auto;
@@ -85,11 +69,11 @@ body {
 .preparation-info {
     padding-left: 1rem;
 }
-.preparation-time ul {
+.preparation-info ul {
     color: rgba(95, 87, 78, 1);
     font-weight: 500;
 }
-.preparation-time ul li {
+.preparation-info ul li {
     padding-left: 1rem;
     padding-top: 0.6rem;
 }
@@ -105,11 +89,7 @@ body {
 .ingredients ul {
     padding-left: 1rem;
 }
-/* .ingreadients-list {
-    color: rgba(95, 87, 78, 1);
-    font-weight: 500;
-    padding-left: 1rem;
-} */
+
 .ingredients ul li {
     padding-bottom: 10px;
     padding-left: 1.5rem;
@@ -150,6 +130,7 @@ body {
 table {
     width: 100%;
     text-align: left;
+    font-weight: 700;
     border-spacing: 1.5rem;
     border-collapse: collapse;
 }
@@ -159,17 +140,29 @@ tr:not(:last-child) {
 
 th {
     color: rgba(133, 70, 50, 1);
-    font-weight: 700;
 }
 td {
     color: rgba(95, 87, 78, 1);
-    font-weight: 600;
     width: 50%;
     padding: 1rem 2rem;
 }
 
-/*--------------- Resonsive for Device (Mobile-375px) -------------*/
-@media only screen and (max-width: 375px) {
+/*---------- Footer -----------*/
+.attribution {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.attribution a {
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(95, 87, 78, 1);
+}
+.attribution a:hover {
+    color: rgba(123, 40, 79, 1);
+}
+
+/*--------------- Resonsive for Device (Mobile upto 768px) -------------*/
+@media screen and (max-width: 768px) {
     /*------ common style -------*/
     .title {
         font-size: 1.6rem;
@@ -190,6 +183,13 @@ td {
         padding: 0;
         border-radius: 0;
     }
+    .omelette-img {
+        border-radius: 0;
+    }
+    .receipe-title {
+        font-size: 2.3rem;
+        padding: 1rem 0;
+    }
     .receipe-text {
         padding: 1rem 2rem;
     }
@@ -199,13 +199,7 @@ td {
         padding: 1rem 2rem;
         border-radius: 0;
     }
-    .omelette-img {
-        border-radius: 0;
-    }
-    .receipe-title {
-        font-size: 2.3rem;
-        padding: 1rem 0;
-    }
+
     .preparation-title {
         font-size: 1.2rem;
         padding: 0;
@@ -218,5 +212,73 @@ td {
     }
     td {
         width: 60%;
+    }
+
+    /*---------- Footer -----------*/
+    .attribution {
+        padding-bottom: 1rem;
+    }
+}
+
+/*--------------- Resonsive for Device (Mobile upto 375px) -------------*/
+@media screen and (max-width: 375px) {
+    /*------ common style -------*/
+    .title {
+        font-size: 1.5rem;
+    }
+    .sub-title {
+        font-weight: 500;
+    }
+
+    /*--------- Other Style -------*/
+    body {
+        font-size: 0.9rem;
+    }
+    .receipe-title {
+        font-size: 1.8rem;
+    }
+    .receipe-text {
+        padding: 1rem 2rem 0;
+    }
+    .preparation-time {
+        background-color: rgba(255, 245, 250, 1);
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    .preparation-info ul li {
+        padding-left: 0.6rem;
+    }
+    .ingredients {
+        padding-bottom: 1rem;
+    }
+    .ingredients h3 {
+        padding-bottom: 1rem;
+    }
+    .ingredients ul li {
+        padding-left: 0.6rem;
+    }
+    .instruction ol li {
+        padding-left: 0.6rem;
+    }
+    .instruction {
+        padding: 1rem 0;
+    }
+    .instruction h3 {
+        padding: 1rem 0;
+    }
+    .nutrition h3 {
+        padding: 1rem 0;
+    }
+    table {
+        font-weight: 500;
+    }
+    td {
+        padding: 0.8rem;
+    }
+
+    /*---------- Footer -----------*/
+    .attribution {
+        padding-bottom: 0.8rem;
+        font-size: 0.8rem;
     }
 }
